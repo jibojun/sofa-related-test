@@ -9,8 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Description:
  */
 @SpringBootApplication
-public class ServiceStarter {
+public class SofaTestApp {
     public static void main(String[] args) {
-        SpringApplication.run(ServiceStarter.class, args);
+        SpringApplication.run(SofaTestApp.class);
     }
 }
