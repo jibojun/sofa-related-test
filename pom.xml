@@ -10,6 +10,11 @@
         <sofaboot.version>2.5.1</sofaboot.version>
     </properties>
 
+    <parent>
+        <groupId>com.alipay.sofa</groupId>
+        <artifactId>sofaboot-dependencies</artifactId>
+        <version>2.5.1</version>
+    </parent>
 
     <groupId>com.test.sofa</groupId>
     <artifactId>sofa-test</artifactId>
@@ -28,11 +33,7 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <version>1.5.17.RELEASE</version>
         </dependency>
-        <dependency>
-            <groupId>com.alipay.sofa</groupId>
-            <artifactId>sofaboot-dependencies</artifactId>
-            <version>${sofaboot.version}</version>
-        </dependency>
+
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>healthcheck-sofa-boot-starter</artifactId>
