@@ -17,7 +17,7 @@ public class TestRestController {
     private SampleJvmService sampleJvmService;
 
     @RequestMapping("test1")
-    public void test(){
-
+    public void test() {
+        System.out.println(sampleJvmService.getMessage());
     }
 }

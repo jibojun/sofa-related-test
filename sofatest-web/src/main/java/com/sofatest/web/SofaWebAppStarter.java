@@ -8,9 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date: Created in 2018-10-29 15:17
  * @Description:
  */
-@SpringBootApplication(scanBasePackages = {"com.sofatest.web.controller"})
-public class SofaTestWeb {
+@SpringBootApplication(scanBasePackages = {"com.sofatest"})
+public class SofaWebAppStarter {
     public static void main(String[] args) {
-        SpringApplication.run(SofaTestWeb.class);
+        SpringApplication.run(SofaWebAppStarter.class);
     }
 }
