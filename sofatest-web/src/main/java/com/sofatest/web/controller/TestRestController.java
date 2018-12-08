@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/sofatest")
 public class TestRestController {
-    @SofaReference
+    @SofaReference(uniqueId = "testJvmService")
     private SampleJvmService sampleJvmService;
 
     @RequestMapping("test1")
