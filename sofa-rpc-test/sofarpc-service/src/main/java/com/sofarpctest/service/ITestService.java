@@ -6,5 +6,5 @@ package com.sofarpctest.service;
  * @Date: 2018/12/9_4:04 PM
  */
 public interface ITestService {
-    String getData(int i);
+    TestResponse getData(TestRequest testRequest);
 }

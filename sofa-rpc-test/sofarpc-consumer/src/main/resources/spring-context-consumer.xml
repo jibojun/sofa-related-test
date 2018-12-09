@@ -7,8 +7,8 @@
 
     <sofa:application name="sofaRpcTestConsumer"/>
     <sofa:protocol name="bolt" host="127.0.0.1" port="20891"/>
-    <sofa:annotation package="com.sofarpctest.consumer"/>
+    <!--<sofa:annotation package="com.sofarpctest.consumer"/>-->
 
-    <context:component-scan base-package="com.sofarpctest.consumer"/>
+    <!--<context:component-scan base-package="com.sofarpctest.consumer"/>-->
 
 </beans>

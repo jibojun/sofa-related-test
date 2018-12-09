@@ -2,6 +2,7 @@ package com.sofarpctest.service.starter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ImportResource;
 
 import java.io.IOException;
@@ -16,7 +17,9 @@ import java.io.IOException;
 public class ServiceStarter {
 
     public static void main(String[] args) {
-        SpringApplication.run(ServiceStarter.class, args);
+        SpringApplication springApplication = new SpringApplication(ServiceStarter.class);
+        ApplicationContext applicationContext = springApplication.run(args);
+//        SpringApplication.run(ServiceStarter.class);
         try {
             System.in.read();
         } catch (IOException e) {
