@@ -1,6 +1,8 @@
 package com.sofarpctest.service.starter;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ImportResource;
 
 import java.io.IOException;
 
@@ -9,11 +11,12 @@ import java.io.IOException;
  * @Description:
  * @Date: 2018/12/9_4:34 PM
  */
+@ImportResource("classpath*:spring-context-service.xml")
+@SpringBootApplication(scanBasePackages = "com.sofarpctest.service.impl")
 public class ServiceStarter {
 
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-context-service.xml");
-        applicationContext.start();
+        SpringApplication.run(ServiceStarter.class, args);
         try {
             System.in.read();
         } catch (IOException e) {

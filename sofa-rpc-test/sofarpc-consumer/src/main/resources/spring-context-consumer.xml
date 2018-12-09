@@ -6,8 +6,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <sofa:application name="sofaRpcTestConsumer"/>
-    <sofa:annotation package="com.sofarpctest.consumer"/>
     <sofa:protocol name="bolt" host="127.0.0.1" port="20891"/>
+    <sofa:annotation package="com.sofarpctest.consumer"/>
 
     <context:component-scan base-package="com.sofarpctest.consumer"/>
 
