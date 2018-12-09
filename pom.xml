@@ -25,6 +25,8 @@
         <module>sofatest-domain</module>
         <module>sofatest-web</module>
         <module>sofatest-app</module>
+        <module>sofa-bolt-test</module>
+        <module>sofa-rpc-test</module>
     </modules>
 
     <dependencies>
